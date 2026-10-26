@@ -8,7 +8,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Then the code.
-COPY practice/ src
+COPY practice/ src/
 COPY scripts/ scripts/
 
 # A folder the service may write to, owned by the user it runs as.
